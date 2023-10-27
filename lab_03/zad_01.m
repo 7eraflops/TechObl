@@ -1,5 +1,5 @@
 f = @(x) sin(x);
-dx = 0.3;
+dx = 0.01;
 x = 0:dx:2 * pi;
 
 % metoda prostokatow
@@ -9,13 +9,11 @@ C_1 = sum(f(x)) * dx
 toc
 figure(1)
 fplot(f, [0, 2 * pi])
+grid on
 hold on
-
-for i = 1:2:(2 * pi / dx)
-    line([x(i), x(i)], [0, f((x(i)))])
-    line([x(i), x(i + 1)], [f((x(i))), f((x(i)))])
-    line([x(i + 1), x(i + 1)], [0, f((x(i)))])
-
+yline(0,'Color','blue')
+for i = 1:(2 * pi / dx)
+    line([x(i), x(i), x(i+1), x(i+1)], [0, f((x(i))),f(x(i)),0],'Color','blue')
 end
 
 % metoda trapezów
