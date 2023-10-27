@@ -11,9 +11,10 @@ figure(1)
 fplot(f, [0, 2 * pi])
 grid on
 hold on
-yline(0,'Color','blue')
+yline(0, 'Color', 'blue')
+
 for i = 1:(2 * pi / dx)
-    line([x(i), x(i), x(i+1), x(i+1)], [0, f((x(i))),f(x(i)),0],'Color','blue')
+    line([x(i), x(i), x(i + 1), x(i + 1)], [0, f((x(i))), f(x(i)), 0], 'Color', 'blue')
 end
 
 % metoda trapezów
