@@ -1,5 +1,5 @@
 f = @(x) sin(x);
-dx = 0.01;
+dx = 0.1;
 x = 0:dx:2 * pi;
 
 % metoda prostokatow

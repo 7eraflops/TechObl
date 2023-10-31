@@ -59,7 +59,7 @@ plot(under_neg_nz(:, 1), under_neg_nz(:, 2), 'r*')
 title("monte carlo integration")
 xlabel("x")
 ylabel("y")
-legend("over pos", "over neg", "under")
+legend("over", "under pos", "under neg")
 
 MC_integral = (length(under_pos_nz) - length(under_neg_nz)) / N * (M * (b - a))
 toc
