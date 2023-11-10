@@ -20,6 +20,3 @@ yq=polyval(sum,xq);
 scatter(x,y)
 hold on
 plot(xq,yq)
-
-
-
