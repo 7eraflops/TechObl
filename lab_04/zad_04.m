@@ -1,7 +1,7 @@
 clear all; close all; clc;
 a=-10;
 b=10;
-x=linspace(a,b,20);
+x=linspace(a,b,30);
 y=sin(x);
 sum=0;
 for i=1:length(x)
