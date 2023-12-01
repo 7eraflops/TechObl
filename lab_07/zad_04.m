@@ -7,7 +7,6 @@ its = [];
 for tolerance = logspace(-4, -16, 12)
 
     x_guess = 6;
-    tolerance = 1 * 10 ^ (-10);
     max_iterations = 100;
     iteration_count = 0;
 
