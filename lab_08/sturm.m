@@ -1,5 +1,5 @@
 close all;clc;clear;
-syms x
+syms x real
 range = [-100, 100];
 degree = 5;
 coefficients_f=randi([-5,5],1,degree+1);
@@ -18,9 +18,12 @@ changes_hi=numel(find(diff(sign(val_hi))));
 
 number_of_real_zeros=changes_lo-changes_hi
 
+poly_roots=double(vpa(solve(f,x)));
+
 figure(1)
 axis([-5 5 -20 20])
 hold on
 grid on
-fplot(funcs)
-legend("AutoUpdate","on")
+fplot(f)
+plot(poly_roots,0,"ro")
+legend("f(x)","zeros")
