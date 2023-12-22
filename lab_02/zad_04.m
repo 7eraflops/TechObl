@@ -25,6 +25,6 @@ plot(zeros(:, 1), zeros(:, 2), 'ro')
 grid on
 xlabel("x")
 ylabel("y")
-title("-x^2+2x+3")
+title("-x^{2}+2x+3")
 
 plot(x, y_m, 'r--')
